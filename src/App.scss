@@ -1,0 +1,69 @@
+
+/*------------- All Elements -------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    a {
+        text-decoration: none;
+        color: rgba(0, 0, 0, 1);
+    }
+    ul {
+        list-style: none;
+    }
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+    p{
+        font-family: "Moderustic", sans-serif;
+    }
+    h1{
+        font-family: "Oswald", sans-serif;
+    }
+    h2{
+        font-family: "Agdasima", sans-serif;
+    }
+}
+
+/*------------- App Elements -------------*/
+.App{
+    background-color: rgba(26, 27, 32, 1);
+    .circle{
+        --circle-size: 40px;
+        position: fixed;
+        height: var(--circle-size);
+        width: var(--circle-size);
+        border: 1px solid rgba(255, 255, 255, 1);
+        border-radius: 100%;
+        top: calc(var(--circle-size)/2*-1);
+        left: calc(var(--circle-size)/2*-1);
+        pointer-events: none;
+        z-index: 22;
+    }
+}
+
+/*------------- Fonts( Kablammo, Moderustic, Oswald, Agdasima ) -------------*/
+@font-face {
+    font-family: Kablammo;
+    src: url('./assets/fonts/Kablammo.ttf');
+}
+@font-face {
+    font-family: Moderustic;
+    src: url('./assets/fonts/Moderustic.ttf');
+}
+@font-face {
+    font-family: Oswald;
+    src: url('./assets/fonts/Oswald.ttf');
+}
+@font-face {
+    font-family: Agdasima;
+    src: url('./assets/fonts/Agdasima.ttf');
+}
+@font-face {
+    font-family: JetBrainsMono;
+    src: url('./assets/fonts/JetBrainsMono.ttf');
+}
+

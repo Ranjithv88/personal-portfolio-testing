@@ -1,0 +1,64 @@
+
+/*--------------------------- Footer Components --------------------*/
+footer{
+    width: 100vw;
+    background-color: white;
+    padding: 40px 0px;
+    mask: url('../../assets/img/About-Brush-Mask-Image.png') no-repeat top / 100% 100%;
+    .Empty{
+        height: 10vh;
+        width: 100vw;
+    }
+    .FTitle{
+        font-size: 40px;
+        padding: 20px 100px;
+    }
+    .FContent{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 10vw;
+        .FOne{
+            width: 50vw;
+            p{
+                text-align: justify;
+                font-size: 16px;
+            }
+            h4{
+                span{
+                    font-size: 28px;
+                }
+                font-size: 25px;
+                padding: 5px 0px;
+            }
+            h5{
+                font-size: 20px;
+            }
+        }
+        .FTwo{
+            width: 20vw;
+            h1{
+                font-size: 30px;
+                padding: 10px 0px;
+                text-align: end;
+                font-weight: bold;
+                font-family: "Kablammo", sans-serif;
+            }
+            .FIcon{
+                overflow: hidden;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                a{
+                    font-size: 25px;
+                    padding: 5px;
+                }
+                a:hover{
+                    font-size: 28px;
+                    padding: 2px;
+                }
+            }
+        }
+    }
+}
+
