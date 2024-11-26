@@ -1,4 +1,7 @@
 
+/*--------------------------- Import Theme.scss --------------------*/
+@import './Theme.scss';
+
 /*--------------------------- Home Components --------------------*/
 header{
     .intro::before{
@@ -12,28 +15,30 @@ header{
         transform: translate(-20%);
         filter: blur(400px);
         z-index: 20;
+        pointer-events: none;
     }
     .intro{
         height: 100vh;
         width: 100vw;
-        background-color: rgba(26, 27, 32, 1);
-        color: rgba(255, 255, 255, 1);
+        background-color: var(--BG_COLOR);
+        color: var(--text_COLOR);
         .HContact{
             height: 100vh;
             width: 4vw;
             position: absolute;
-            background-color: rgba(26, 27, 32, 1);
+            background-color: var(--BG_COLOR);
+            color: var(--text_COLOR);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: end;
             div{
                 height: 12vh;
-                border: 1px solid rgba(255, 255, 255, 1);
+                border: 1px solid var(--text_COLOR);
                 padding-bottom: 10px;
             }
             a{
-                color: rgba(255, 255, 255, 1);
+                color: var(--text_COLOR);
                 font-size: 20px;
                 padding: 4px 0px;
                 transition: 1;
@@ -57,7 +62,7 @@ header{
                 color: rgba(196, 140, 103, 1);
             }
             span{
-            color: rgb(255, 255, 255);
+                color: var(--text_COLOR);
             }
             .main{
                padding-left: 28px;
@@ -98,5 +103,106 @@ header{
             }
         }
     }
+}
+
+/*--------------------------- phone Home Components --------------------*/
+@media screen and (min-width: 200px) and (max-width: 1200px) {
+    .home{
+        .intro::before{
+            content: "";
+            height: 40vh;
+            width: 40vh;
+            background-color: rgba(255, 255, 255, 1);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            filter: blur(400px);
+            z-index: 20;
+            pointer-events: none;
+        }
+        .intro{
+            height: 100vh;
+            width: 100vw;
+            background-color: var(--BG_COLOR);
+            color: var(--text_COLOR);
+            .HContact{
+                background-color: var(--BG_COLOR);
+                color: var(--text_COLOR);
+                height: 100vh;
+                width: 6vw;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                top:0;
+                left: 0;
+                div{
+                    height: 12vh;
+                    border: 1px solid var(--text_COLOR);
+                    padding-bottom: 10px;
+                }
+                a{
+                    color: var(--text_COLOR);
+                    font-size: 16px;
+                    padding: 4px 0px;
+                    transition: 1;
+                }
+                a:hover{
+                    font-size: 18px;
+                    color: rgba(218, 99, 161, 1);
+                    padding: 1px 0px;
+                }
+                main{
+                    height: 3vh;
+                }
+            }
+            .profile{
+                position: absolute;
+                top: 20%;
+                left: 10%;
+                transform: translate(-80%, -90%);
+                font-size: 10px;
+                width: 80vw;
+                .java{
+                    font-family: 'JetBrainsMono',sans-serif;
+                    color: rgba(196, 140, 103, 1);
+                }
+                span{
+                    color: var(--text_COLOR);
+                }
+                .color{
+                    color: rgba(83, 163, 239, 1);
+                }
+                .color01{
+                    color: rgba(215, 186, 125, 1);
+                }
+                .HContent{
+                    padding: 2px;
+                    display: grid;
+                    row-gap: 10px;
+                    color: rgba(89, 120, 64, 1);
+                    p{
+                        font-size: 10px;
+                        text-align: justify;
+                    }
+                    button{
+                        border-radius: 10px;
+                        border: 2px solid rgb(255, 255, 255);
+                        padding: 7px 10px;
+                        margin: 5px;
+                        width: fit-content;
+                        font-size: 28px;
+                        cursor: pointer;
+                        background-color: rgba(255, 255, 255, 1);
+                        color: rgba(0, 0, 0, 1);
+                        transition: 0.8s;
+                        font-family: "Kablammo", sans-serif;
+                    }
+                }
+            }
+        }
+    }    
 }
 

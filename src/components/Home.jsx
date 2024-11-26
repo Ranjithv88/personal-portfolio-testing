@@ -10,12 +10,12 @@ import { STAnimation } from './Details.jsx'
 
 function Home() {
   const redirect = () => {
-    window.open('https://github.com/Ranjithv88/Ranjithv88/blob/main/RanjithKumar%20Resume.pdf', '_blank')
+    window.open('https://drive.google.com/file/d/11zZM1q5smV6EZCIHSYHEYxLjOx2tBwSu/view?usp=sharing', '_blank')
   }
   return (
     <header className="home scroll">
         <div className="intro">
-          <motion.div className='HContact' initial={{x: -50}} whileInView={{x: 0}} transition={{ duration: 2 }} viewport={{ amount: 0, once: true }} >
+          <motion.div className='HContact' initial={{x: -15}} whileInView={{x: 0}} transition={{ duration: 2 }} viewport={{ amount: 0, once: true }} >
             <IoIosArrowUp />
             <div></div>
             <a target='_blank' href="mailto:Ranjithkumar22445588@gmail.com"><MdMailOutline /></a>

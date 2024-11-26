@@ -1,9 +1,12 @@
 
+/*--------------------------- Import Theme.scss --------------------*/
+@import './Theme.scss';
+
 /*--------------------------- NavBar Components --------------------*/
 header{
     nav{
-        color: rgb(255, 255, 255);
-        background-color: rgb(26, 27, 32);
+        background-color: var(--BG_COLOR);
+        color: var(--text_COLOR);
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -30,6 +33,38 @@ header{
                 li{
                     cursor: pointer;
                     z-index: 22;
+                }
+                .ListMenu{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/*--------------------------- phone NavBar Components --------------------*/
+@media screen and (min-width: 200px) and (max-width: 1200px) {
+    header{
+        nav{
+            height: 15vh;
+            display: grid;
+            padding: 1vw;
+            position: fixed;
+            .name{
+                width: 98vw;
+                h1{
+                    font-size: 18px;
+                }
+            }
+            .menu{
+                .menuList{
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    li{
+                        font-size: 14px;
+                    }
                 }
             }
         }
